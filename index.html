@@ -3,10 +3,185 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+  
+  <header class="header-top">
+    <a href="#" class="header-top__logo main-logo">
+      <img class="main-logo__image logo-image" src="img/logo.png" alt="logo-sedona" height="70">
+    </a>
+    <nav class="header-top__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">ИНФОРМАЦИЯ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ФОТО И ВИДЕО</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">КАРТА ШТАТА</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ГОСТИНИЦЫ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="page-main">
+    <div class="page-main__bg">
+      <span class="page-main__feature">
+        <img class="feature__caption" src="img/Welcome.png" alt="WELCOME" height="45">
+      </span>
+      <span class="page-main__feature">
+        <img class="feature__caption" src="img/to-the-gorgeous.png" alt="to the gorgeous" height="30">
+      </span>
+      <span class="page-main__feature">
+        <img class="feature__caption" src="img/Sedona.png" alt="SEDONA" height="78">
+      </span>
+      <span class="page-main__feature">
+        <img class="feature__caption" src="img/Because.png" alt="Because the Grand Canyon sucks!" height="80">
+      </span>
+    </div>
+    <div class="page-main__title title">
+      <h2 class="title__heading">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h2>
+      <p class="title__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+  </main>
+  
+  <section class="sect-benefits__row">
+    <div class="sect-benefits__col col__one col-blue">
+      <span><h2>НАСТОЯЩИЙ ГОРОДОК</h2></span>
+      <span>— №1 —</span>
+      <span>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</span>
+    </div>
+    <div class="sect-benefits__col col__image">
+      <img src="http://via.placeholder.com/800x256" alt="">
+    </div>
+  </section>
+  
+  <section class="sect-benefits__row">
+    <div class="sect-benefits__col col__one col-item">
+      <img src="img/icon-1.svg" alt="" height="75">
+      <span><h2>Жилье</h2></span>
+      <span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span></div>
+    <div class="sect-benefits__col col__one col-item">
+      <img src="img/icon-2.svg" alt="" height="75">
+      <span><h2>Еда</h2></span>
+      <span>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</span>
+    </div>
+    <div class="sect-benefits__col col__one col-item">
+      <img src="img/icon-3.svg" alt="" height="75">
+      <span><h2>Сувениры</h2></span>
+      <span>Не только китайского, но и местного производства!</span>
+    </div>
+  </section>
+  
+  <section class="sect-benefits__row">
+    <div class="sect-benefits__col col__image">
+      <img src="http://via.placeholder.com/800x256" alt=""></div>
+    <div class="sect-benefits__col col__one col-blue">
+      <span><h2>ТАМ ЕСТЬ Мост дьявола</h2></span>
+      <span>— №2 —</span>
+      <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+    </div>
+  </section>
+  
+  <section class="sect-benefits__row">
+    <div class="sect-benefits__col col__one col-gray">
+      <span><h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2></span>
+      <span>— №3 —</span>
+      <span>ВСЕ достопримечательности находятся очень близко</span>
+    </div>
+    <div class="sect-benefits__col col__one col-gray">
+      <span><h2>КРАСИВАЯ ДОРОГА</h2></span>
+      <span>— №4 —</span>
+      <span>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</span>
+    </div>
+    <div class="sect-benefits__col col__one col-gray">
+      <span><h2>МАЛО ТУРИСТОВ</h2></span>
+      <span>— №5 —</span>
+      <span>Большинство едет в гранд каньон и толпится там</span>
+    </div>
+  </section>
+  
+  <section class="page-footer">
+    <div class="page-footer__title">
+      <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <img src="http://via.placeholder.com/1200x593" alt="">
+    </div>
+    
+    <div class="page-footer__form form__popup">
+      <h2 class="form__popup--heading">Поиск гостиницы в Седоне</h2>
+      <form class="form--popup--block form" action="" method="post">
+        <fieldset class="formsearch formsearch__date checkin">
+          <label class="formsearch__date--label checkin__label" for="">Дата заезда:</label>
+          <input class="formsearch__date--input checkin__input" type="date" name="" value="2017-04-24" pattern="" id="">
+          <span></span>
+        </fieldset>
+        <fieldset class="formsearch formsearch__date checkout">
+          <label class="formsearch__date--label checkout__label" for="">Дата Выезда:</label>
+          <input class="formsearch__date--input checkout__input" type="date" name="" value="2017-07-04" id="">
+          <span></span>
+        </fieldset>
+        <fieldset class="formsearch formsearch__num adults">
+          <label class="formsearch__num--label adults__label" for="">ВзрослыЕ:</label>
+          <div>
+            <button class="" type="button" name="">
+              <img src="img/minus-form.svg" alt="minus" width="11">
+            </button>
+            <input class="formsearch__num--input adults__input" type="number" name="" value="2" min="0" max="40" step="1">
+            <button class="" type="button" name="">
+              <img src="img/plus-form.svg" alt="plus" width="11">
+            </button>
+          </div>
+        </fieldset>
+        <fieldset class="formsearch formsearch__num children">
+          <label class="formsearch__num--label children__label" for="">ДетИ:</label>
+          <div>
+            <button class="" type="button" name="">
+              <img src="img/minus-form.svg" alt="minus" width="11">
+            </button>
+            <input class="formsearch__num--input children__input" type="number" name="" value="0" min="0" max="40" step="1">
+            <button class="" type="button" name="">
+              <img src="img/plus-form.svg" alt="plus" width="11">
+            </button>
+          </div>
+        </fieldset>
+        <button class="formsearch__submit submit" type="submit">НАЙТИ</button>
+      </form>
+    </div>
+    
+    <footer class="page-footer__contacts footer">
+      <ul class="footer__items">
+        <li class="footer__item tag">
+          <a class="footer__link tag__link">#visitSEDONA</a>
+        </li>
+        <li class="footer__item socials">
+          <a class="footer__link socials__link twitter" href="#">
+            <img src="img/social-tw.svg" alt="twitter" width="17">
+          </a>
+          <a class="footer__link socials__link facebook" href="#">
+            <img src="img/social-fb.svg" alt="facebook" width="12">
+          </a>
+          <a class="footer__link socials__link youtube" href="#">
+            <img src="img/social-youtb.svg" alt="youtube" width="20">
+          </a>
+        </li>
+        <li class="footer__item dev-logo">
+          <a class="footer__link dev-logo__link logo-academy" href="">WEBSITE by
+            <img src="img/footer-logo.svg" alt="logo-academy" height="40">
+          </a>
+        </li>
+      </ul>
+    
+    </footer>
+  </section>
+  
+  
   </body>
 </html>

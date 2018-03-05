@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext">
+  </head>
+  <body>
+  
+    <header class="header-top">
+    <a href="#" class="header-top__logo main-logo">
+      <img class="main-logo__image logo-image" src="img/logo.png" alt="logo-sedona" height="70">
+    </a>
+    <nav class="header-top__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">ИНФОРМАЦИЯ</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ФОТО И ВИДЕО</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">КАРТА ШТАТА</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">ГОСТИНИЦЫ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="page-filter">
+    <form class="page-filter__form filter" action="" method="post" oninput="">
+      <fieldset class="filter__checkbox">
+        <span class="filter__checkbox--label checkbox__list filter-title"><label for="">ИНФРАСТРУКТУРА:</label></span>
+        <span class="checkbox__item"><input type="checkbox" value="БАССЕЙН" checked>БАССЕЙН</span>
+        <span class="checkbox__item"><input type="checkbox" value="ПАРКОВКА">ПАРКОВКА</span>
+        <span class="checkbox__item"><input type="checkbox" value="Wi-Fi">Wi-Fi</span>
+      </fieldset>
+      <fieldset class="filter__checkbox">
+        <span class="filter__checkbox--label checkbox__list filter-title"><label for="">Тип жилья:</label></span>
+        <span class="checkbox__item"><input type="checkbox" value="ГостиницА" checked>ГостиницА</span>
+        <span class="checkbox__item"><input type="checkbox" value="МОТЕЛЬ" checked>МОТЕЛЬ</span>
+        <span class="checkbox__item"><input type="checkbox" value="АПАРТАМЕНТЫ" checked>АПАРТАМЕНТЫ</span>
+      </fieldset>
+      
+      <div class="filter-range">
+        <span class="filter__range--label range__title filter-title">Стоимость в сутки (р):</span>
+        <div class="price-controls">
+          <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+          <input type="range" min="0" max="3600" value="3000" step="1">
+          <div class="bar">
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+        </div>
+        <button class="filter__button" type="submit">Показать</button>
+      </div>
+    </form>
+  </section>
+  
+  <div class="page-search">
+    
+    <aside class="page-search__sort section__sort sort">
+      <div class="sort__num">
+        <h2>НАЙДЕНО: <span>3</span></h2>
+      </div>
+      <div class="sort__specification">
+        <span>СОРТИРОВКА:</span>
+        <a href="#">ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="">ПО РЕЙТИНГУ</a>
+      </div>
+      <span sort__arrows>
+        <a href="#">&#9650;</a>
+        <a href="#">&#9660;</a>
+      </span>
+    </aside>
+    
+    
+    <section class="section__products">
+      <article class="section__products--row product-row">
+        <span class="product-row__image">
+          <img src="http://via.placeholder.com/135x90" alt="">
+        </span>
+        <div class="product-row__content ">
+          <h2>Amara Resort & Spa</h2>
+          <span class="tag__type">
+            <a href="#">Гостиница</a>
+          </span>
+          <span class="tag__price">
+            <a href="#">ОТ 4000 Р.</a>
+          </span>
+          <div class="product-row__btns">
+            <button class="btn__more">ПОДРОБНЕЕ</button>
+            <button class="btn__booking">ЗАБРОНИРОВАТЬ</button>
+          </div>
+        </div>
+        <div class="product-row__stars">
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+        </div>
+        <span class="product-row__rating">
+          <a href="">Рейтинг: 8,5</a>
+        </span>
+      </article>
+      
+      <article class="section__products--row product-row">
+        <span class="product-row__image">
+          <img src="http://via.placeholder.com/135x90" alt="">
+        </span>
+        <div class="product-row__content ">
+          <h2>Desert Quail Inn</h2>
+          <span class="tag__type">
+            <a href="#">Мотель</a>
+          </span>
+          <span class="tag__price">
+            <a href="#">ОТ 3000 Р.</a>
+          </span>
+          <div>
+            <button class="btn__more">ПОДРОБНЕЕ</button>
+            <button class="btn__booking">ЗАБРОНИРОВАТЬ</button>
+          </div>
+        </div>
+        <div class="product-row__stars">
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+        </div>
+        <span class="product-row__rating">
+          <a href="">Рейтинг: 8,9</a>
+        </span>
+      </article>
+      
+      <article class="section__products--row product-row">
+        <span class="product-row__image">
+          <img src="http://via.placeholder.com/135x90" alt="">
+        </span>
+        <div class="product-row__content ">
+          <h2>Villas at Poco Diablo</h2>
+          <span class="tag__type">
+            <a href="#">Апартаменты</a>
+          </span>
+          <span class="tag__price">
+            <a href="#">ОТ 2000 Р.</a>
+          </span>
+          <div>
+            <button class="btn__more">ПОДРОБНЕЕ</button>
+            <button class="btn__booking">ЗАБРОНИРОВАТЬ</button>
+          </div>
+        </div>
+        <div class="product-row__stars">
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+          <a href="#"><img src="img/star.svg" alt="★"></a>
+        </div>
+        <span class="product-row__rating">
+          <a href="">Рейтинг: 9,2</a>
+        </span>
+      </article>
+    </section>
+  </div>
+   
+   <footer class="page-footer__contacts footer">
+      <ul class="footer__items">
+        <li class="footer__item tag">
+          <a class="footer__link tag__link">#visitSEDONA</a>
+        </li>
+        <li class="footer__item socials">
+          <a class="footer__link socials__link twitter" href="#">
+            <img src="img/social-tw.svg" alt="twitter" width="17">
+          </a>
+          <a class="footer__link socials__link facebook" href="#">
+            <img src="img/social-fb.svg" alt="facebook" width="12">
+          </a>
+          <a class="footer__link socials__link youtube" href="#">
+            <img src="img/social-youtb.svg" alt="youtube" width="20">
+          </a>
+        </li>
+        <li class="footer__item dev-logo">
+          <a class="footer__link dev-logo__link logo-academy" href="">WEBSITE by
+            <img src="img/footer-logo.svg" alt="logo-academy" height="40">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  
+  </body>
+</html>
